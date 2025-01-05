@@ -1,0 +1,85 @@
+.about__wrapper {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 44px;
+}
+
+.about__image {
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: 1px solid var(--clr-light);
+    width: 150px;
+    transition: border 0.3s;
+}
+
+.about__image:hover {
+    border: 1px solid var(--clr-rose);
+}
+
+.about__title {
+    font-size: var(--size-2xl);
+    margin-bottom: 1em;
+}
+
+.about__description {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+}
+
+/* XS */
+/* @media (min-width: 475px) {
+    
+} */
+
+/* S */
+/* @media (min-width: 640px) {    
+    
+} */
+
+/* M */
+@media (min-width: 768px) {
+    .about__wrapper {
+        margin-top: 56px;
+    }
+
+    .about__image {
+        width: 200px;
+    }
+
+    .about__title {
+        font-size: var(--size-3xl);
+    }
+}
+
+/* L */
+@media (min-width: 1024px) {
+    .about__wrapper {
+        margin-top: 68px;
+    }
+
+    .about__image {
+        width: 250px;
+    }
+
+    .about__title {
+        font-size: var(--size-4xl);
+    }
+    
+    .about__description {
+        font-size: var(--size-xl);
+    }
+}
+
+/* XL */
+/* @media (min-width: 1280px) {
+
+} */
+
+/* XXL */
+/* @media (min-width: 1536px) {
+    
+} */

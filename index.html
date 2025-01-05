@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - CMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/modern-normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components/header.css" />
+    <link rel="stylesheet" href="/css/components/mobile-header.css" />
+    <link rel="stylesheet" href="/css/components/hero.css" />
+    <link rel="stylesheet" href="/css/components/service.css" />
+    <link rel="stylesheet" href="/css/components/feature.css" />
+    <link rel="stylesheet" href="/css/components/about.css" />
+    <link rel="stylesheet" href="/css/components/contact.css" />
+    <link rel="stylesheet" href="/css/components/footer.css" />
+    <link rel="stylesheet" href="/css/util.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <h1 class="header__title">
+        <a
+          class="header__title-link"
+          href="index.html"
+          aria-label="Go to Home Page"
+          >CMC</a
+        >
+      </h1>
+      <nav
+        class="header__navigation"
+        role="navigation"
+        aria-label="Main navigation"
+      >
+        <ul class="header__list">
+          <li class="header__item">
+            <a
+              class="header__link"
+              href="index.html"
+              aria-label="Go to Home Page"
+              >Home</a
+            >
+          </li>
+          <li class="header__item">
+            <a
+              class="header__link"
+              href="#services"
+              aria-label="View Services"
+              >Services</a
+            >
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#about" aria-label="Learn About Us"
+              >About</a
+            >
+          </li>
+        </ul>
+        
+      </nav>
+      <a id="header__button" class="header__list header__link" href="#contact" aria-label="Contact Us">Contact</a>
+      <button class="header__toggle" aria-label="Toggle Mobile Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <div class="mobile-header" aria-hidden="true">
+      <ul class="mobile-header__list">
+        <li class="mobile-header__item">
+          <a
+            class="mobile-header__link"
+            href="index.html"
+            aria-label="Go to Home Page"
+            >Home</a
+          >
+        </li>
+        <li class="mobile-header__item">
+          <a
+            class="mobile-header__link"
+            href="#services"
+            aria-label="View Services"
+            >Services</a
+          >
+        </li>
+        <li class="mobile-header__item">
+          <a class="mobile-header__link" href="#about" aria-label="Learn About Us"
+            >About</a
+          >
+        </li>
+        <li class="mobile-header__item">
+          <a class="mobile-header__link" href="#contact" aria-label="Contact Us"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <section class="hero container" aria-labelledby="hero-title">
+
+        <video autoplay muted loop id="hero__video" src="/public/hero-video.mp4" type="video/mp4"></video>
+
+        <div class="hero__wrapper">
+          <div class="hero__text">
+            <h1 class="hero__title" id="hero-title">
+              Stand Out with <br /> Custom Golf Clubs
+            </h1>
+            <p class="hero__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium ipsa ad excepturi ullam. Iusto quaerat mollitia quas eum molestiae.
+            </p>
+            <a
+              class="hero__button-1"
+              href="#services"
+              aria-label="Explore Custom Golf Clubs"
+              >Services</a
+            >
+            <a
+              class="hero__button-2"
+              href="#about"
+              aria-label="Learn More About Our Services"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="service container section"
+        id="services"
+        aria-labelledby="service-title"
+      >
+        <div class="service__wrapper-2">
+          <h2 class="service__subtitle">Customize</h2>
+        <h1 class="service__title" id="service-title">
+          Unleash Your Golf Potential with Customization
+        </h1>
+        <p class="service__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatibus voluptates ad harum ipsum magnam dicta veniam rem.
+        </p>
+        <div class="service__wrapper">
+          <div class="service__item">
+            <img
+              class="service__item-image"
+              src="/public/services.jpg"
+              alt="Wedge Stamping Service"
+              loading="lazy"
+            />
+            <h2 class="service__item-title">Wedge Stamping</h2>
+            <p class="service__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, natus ut quibusdam tenetur culpa.
+            </p>
+          </div>
+          <div class="service__item">
+            <img
+              class="service__item-image"
+              src="/public/services.jpg"
+              alt="Laser Engraving Service"
+              loading="lazy"
+            />
+            <h2 class="service__item-title">Laser Engraving</h2>
+            <p class="service__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, natus ut quibusdam tenetur culpa.
+            </p>
+          </div>
+          <div class="service__item">
+            <img
+              class="service__item-image"
+              src="/public/services.jpg"
+              alt="Putter Customization Service"
+              loading="lazy"
+            />
+            <h2 class="service__item-title">Putter Customization</h2>
+            <p class="service__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, natus ut quibusdam tenetur culpa.
+            </p>
+          </div>
+          <a
+          class="service__link"
+          href="#contact"
+          aria-label="See Details of Our Services"
+          >Contact</a
+        >
+        </div>
+      </section>
+
+      <section
+        class="feature container section"
+        aria-labelledby="feature-title"
+      >
+        <div class="feature__wrapper">
+          <div class="feature__text">
+            <h1 class="feature__title" id="feature-title">
+              Elevate Your Experience with Tailored Tournament Packages
+            </h1>
+            <p class="feature__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eius ad quas sapiente architecto voluptatibus corporis neque sed, quasi quo mollitia.
+            </p>
+            <div class="feature__category-wrapper">
+              <div class="feature__category-item">
+                <h3 class="feature__category-title">Club Event</h3>
+                <p class="feature__category-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="feature__category-item">
+                <h3 class="feature__category-title">Corporate Event</h3>
+                <p class="feature__category-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature__image">
+            <img
+              class="feature__image-item"
+              src="/public/feature.jpg"
+              alt="Custom Tournament Feature with Golf Clubs"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <div class="about__wrapper">
+          <h1 class="about__title">About Us</h1>
+          <img
+            src="/public/profile-pic.jpg"
+            alt="Profile Picture"
+            class="about__image"
+            loading="lazy"
+          />
+          <p class="about__description">
+            My name is Elliott and I have a Degree in Industrial Design, I am an
+            assistant golf professional at the Beverly Golf & Country Club, a
+            CPGA member, and I am a proud Titleist staff representative.
+            <br /><br />
+            I knew when I was finished school I wanted to combine my creativity
+            along with my love for the game of golf; thus came Customize My
+            Clubs. My journey started in my parents' garage with a work bench,
+            an old wedge, a hammer, some paint and a creative mind.
+            <br /><br />
+            Back in 2019 I started stamping wedges for friends and family. Since
+            then I have been fortunate enough to stamp wedges for people all
+            around the world, and someday I hope to stamp wedges for the PGA
+            players.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <div class="contact__wrapper">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact__form"
+          >
+            <h2 class="contact__title">Contact Us</h2>
+            <div class="contact__group">
+              <input
+                type="hidden"
+                name="access_key"
+                value="de8b19a8-0694-4700-ad26-aefc9bddb3b8"
+              />
+              <input
+                type="text"
+                name="name"
+                class="contact__item"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                class="contact__item"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                name="comment"
+                placeholder="How can we help?"
+                class="contact__item"
+                required
+              ></textarea>
+              <button type="submit" class="contact__button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+      <footer
+        class="footer section"
+        role="contentinfo"
+        aria-labelledby="footer-title"
+      >
+        <div class="footer__wrapper">
+          <div class="footer_item">
+            <h3 class="footer__title" id="footer-title">Quick Links</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-link"
+                  href="index.html"
+                  aria-label="Go to Home Page"
+                  >Home</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-link"
+                  href="#services"
+                  aria-label="View Services"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-link"
+                  href="#about"
+                  aria-label="Learn About Us"
+                  >About</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#contact" aria-label="Contact Us"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_item">
+            <h3 class="footer__title">Follow Us</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-link"
+                  href="https://www.instagram.com/customizemyclubs/"
+                  aria-label="Follow us on Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-link"
+                  href="https://www.tiktok.com/@customizemyclubs"
+                  aria-label="Follow us on TikTok"
+                  >TikTok</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-link"
+                  href="mailto:elliott@beverlygolfclub.org"
+                  aria-label="Send us an Email"
+                  >Mail</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&copy; CMC. All rights reserved.</p>
+      </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2em;
+    padding: 1rem 2rem;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 1em;
+}
+
+.footer__title {
+    margin-bottom: 1em;
+}
+
+.footer__list-link {
+    text-decoration: none;
+}
+
+.footer__copyright {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+
+.footer__scroll {
+    background-color: var(--clr-dark);
+    opacity: 0.9;
+}
+
+/* XS */
+/* @media (min-width: 475px) {
+    
+} */
+
+/* S */
+/* @media (min-width: 640px) {    
+    
+} */
+
+/* M */
+@media (min-width: 768px) {
+    .footer__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: start;
+        gap: 2em;
+    }
+    
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        gap: 1em;
+    }
+    
+    .footer__title {
+        margin-bottom: 1em;
+    }
+    
+    .footer__list-link {
+        text-decoration: none;
+    }
+
+    .footer__copyright {
+        text-align: right;
+    }
+}
+
+/* L */
+/* @media (min-width: 1024px) {
+
+} */
+
+/* XL */
+/* @media (min-width: 1280px) {
+
+} */
+
+/* XXL */
+/* @media (min-width: 1536px) {
+    
+} */

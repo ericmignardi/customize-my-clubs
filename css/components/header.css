@@ -1,0 +1,122 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    transition: all 0.3s;
+}
+
+.header__scroll {
+    background-color: var(--clr-dark);
+    opacity: 0.9;
+}
+
+.header__title {
+    font-size: var(--size-4xl);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+.header__title-link {
+    text-decoration: none;
+}
+
+.header__toggle {
+    color: var(--clr-light);
+    height: var(--size-2xl);
+    width: var(--size-2xl);
+    z-index: 9999;
+}
+
+.header__list {
+    display: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.header__item {
+    font-size: var(--size-sm);
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--clr-light);
+    transition: color 0.3s;
+}
+
+.header__link:hover {
+    color: var(--clr-rose);
+}
+
+/* XS */
+/* @media (min-width: 475px) {
+    
+} */
+
+/* S */
+/* @media (min-width: 640px) {    
+    
+} */
+
+/* M */
+@media (min-width: 768px) {
+    .header__title {
+        font-size: var(--size-5xl);
+        
+    }
+    
+    .header__toggle {
+        display: none;
+    }
+    
+    .header__list {
+        display: flex;
+    }
+
+    .header__item {
+        font-size: var(--size-base);
+    }
+
+    #header__button {
+        border: 1px solid var(--clr-rose);
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        transition: all 0.3s;
+    }
+
+    #header__button:hover {
+        background-color: var(--clr-rose);
+        color: var(--clr-light);
+        border: 1px solid var(--clr-light);
+    }
+}
+
+/* L */
+@media (min-width: 1024px) {
+    .header__title {
+        font-size: var(--size-6xl);
+    }
+
+    .header__item {
+        font-size: var(--size-lg);
+    }
+}
+
+/* XL */
+/* @media (min-width: 1280px) {
+
+} */
+
+/* XXL */
+/* @media (min-width: 1536px) {
+    
+} */

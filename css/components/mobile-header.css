@@ -1,0 +1,34 @@
+.mobile-header {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--clr-dark);
+}
+
+.mobile-header__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    gap: 2rem;
+}
+
+.mobile-header__link {
+    text-decoration: none;
+    color: var(--clr-light);
+    transition: color 0.3s;
+}
+
+.mobile-header__link:hover {
+    color: var(--clr-rose);
+}
